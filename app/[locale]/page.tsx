@@ -52,13 +52,6 @@ export default async function HomePage({
                 <Icon width="18" />
               </a>
             </div>
-            <p className="hero-launch">
-              <span className="tiny-flags">
-                <i />
-                <i />
-              </span>
-              {t.launch}
-            </p>
           </div>
         </div>
       </section>

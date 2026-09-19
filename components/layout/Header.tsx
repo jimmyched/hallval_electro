@@ -50,7 +50,6 @@ export function Header() {
               className="language-switch"
               aria-label={locale === "fr" ? "Langue" : "Language"}
             >
-              <Icon name="globe" width="16" height="16" />
               {(["en", "fr"] as const).map((l) => (
                 <Link
                   key={l}

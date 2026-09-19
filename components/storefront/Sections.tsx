@@ -100,7 +100,6 @@ export function Reviews({ featured, rated = false }: { featured?: Persona; rated
                 </span>
                 <div>
                   <strong>{p.name}</strong>
-                  <span>{p.context}</span>
                 </div>
                 <Icon name="leaf" />
               </figcaption>

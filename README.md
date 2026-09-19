@@ -42,6 +42,24 @@ Language switching preserves the current route. Navigation, FAQs, electrode sele
 
 ## Editing
 
+### Theme previews
+
+The original green and cream design remains the default. Add `?theme=1` for Ocean
+(navy and pale blue) or `?theme=2` for Terracotta (clay and ivory), for example
+`/en?theme=1` or `/fr/product/albea?theme=2`. All themes use the original Inter and
+Fraunces fonts with identical text sizes, weights, spacing, and line wrapping.
+Internal links and language switches retain the selected theme. Removing the
+parameter, or using an unsupported value, restores the original design. Themes
+are URL-based and do not create a saved browser preference.
+
+Palette variables live at the end of `app/globals.css`; the original color
+fallbacks preserve the default appearance. New internal links should use `Link`
+from `i18n/navigation` to retain the theme. Fonts and their OFL licenses are
+bundled in `public/fonts`. Run `npm run test:themes` with Node.js 22.6+ to check
+theme resolution and URL handling.
+
+### Content and assets
+
 - Bilingual shared content: `lib/content.ts`
 - Direct-access campaign content: `lib/campaigns.ts`
 - Educational facts and language-specific sources: `lib/research.ts`
