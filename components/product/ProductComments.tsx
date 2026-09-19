@@ -25,12 +25,12 @@ export function ProductComments() {
     {comments.map((comment, i) => <article className="local-comment" key={i}>
       <div><strong>{comment.name}</strong><span aria-label={`${comment.rating}/5`}><RatingStars rating={comment.rating}/></span></div>
       <p>{comment.body}</p>
-      <small>{fr ? "Votre impression · Visible uniquement dans cet aperçu" : "Your thoughts · Visible only in this preview"}</small>
+      <small>{fr ? "Votre impression" : "Your thoughts"}</small>
     </article>)}
     <details className="comment-composer">
       <summary>{fr ? "Partager une impression" : "Share your thoughts"}<span aria-hidden="true">＋</span></summary>
       <form onSubmit={submit}>
-        <p>{fr ? "Que pensez-vous du concept albea™ Pulse ? Votre commentaire reste dans cette page et disparaît au rechargement." : "What do you think of the albea™ Pulse concept? Your comment stays on this page and disappears when you reload."}</p>
+        <p>{fr ? "Que pensez-vous du concept albea™ Pulse ?" : "What do you think of the albea™ Pulse concept?"}</p>
         <div className="comment-fields">
           <label>{fr ? "Prénom" : "First name"}<input name="name" autoComplete="given-name" required maxLength={60}/></label>
           <fieldset><legend>{fr ? "Votre note du concept" : "Your concept rating"}</legend><div className="rating-options">{[1,2,3,4,5].map((value) => <label key={value} className={value <= rating ? "chosen" : ""}>
@@ -39,7 +39,7 @@ export function ProductComments() {
         </div>
         <label>{fr ? "Votre commentaire" : "Your comment"}<textarea name="comment" rows={4} required minLength={10} maxLength={1200}/></label>
         <button className="button" type="submit">{fr ? "Ajouter mon commentaire" : "Add my comment"}</button>
-        <p className="comment-status" role="status">{submitted && (fr ? "Merci ! Votre commentaire est affiché dans cet aperçu." : "Thank you! Your comment is displayed in this preview.")}</p>
+        <p className="comment-status" role="status">{submitted && (fr ? "Merci pour votre commentaire !" : "Thank you for sharing your thoughts!")}</p>
       </form>
     </details>
   </div>;

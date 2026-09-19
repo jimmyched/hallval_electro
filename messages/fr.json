@@ -4,27 +4,25 @@
     "description": "Découvrez Albea Pulse, un concept de support ouvert à quatre électrodes pour explorer l’activation du muscle du gros orteil. En développement pour 2027, en France et aux États-Unis."
   },
   "cart": {
-    "title": "Votre précommande démo",
+    "title": "Votre commande",
     "openCart": "Ouvrir le panier, {count, plural, =0 {vide} one {# article} other {# articles}}",
     "close": "Fermer le panier",
     "empty": "Votre prochain petit geste commence ici.",
     "shopCta": "Découvrir Albea",
-    "subtotal": "Sous-total illustratif",
-    "shippingNote": "Aperçu uniquement. Prix, livraison et taxes restent à définir.",
-    "checkout": "Terminer la précommande démo",
+    "subtotal": "Sous-total",
+    "checkout": "Passer au paiement",
     "remove": "Retirer",
     "quantity": "Quantité",
     "decreaseQuantity": "Diminuer la quantité",
     "increaseQuantity": "Augmenter la quantité",
-    "error": "Le panier n’a pas pu être mis à jour. Veuillez réessayer.",
-    "mockCheckoutNotice": "Fin du parcours de démonstration. Aucune commande n’a été passée et aucun paiement n’a été effectué. Rendez-vous en 2027 pour la suite."
+    "error": "Le panier n’a pas pu être mis à jour. Veuillez réessayer."
   },
   "product": {
     "purchase": {
       "eyebrow": "LE CONCEPT ALBEA · LANCEMENT ENVISAGÉ EN 2027",
       "summary": "Albea Pulse. Un support textile ouvert, quatre électrodes intégrées et une intention précise : explorer l’activation de l’abducteur de l’hallux, le muscle qui longe le bord interne du pied.",
-      "sizeLabel": "Choisissez une taille de démonstration",
-      "variantSoldOut": "Indisponible dans cette démonstration",
+      "sizeLabel": "Choisissez votre taille",
+      "variantSoldOut": "Indisponible",
       "quantityLabel": "Quantité",
       "decrease": "Diminuer la quantité",
       "increase": "Augmenter la quantité",
@@ -33,10 +31,9 @@
       "added": "Ajouté au panier",
       "addToCart": "Ajouter au panier",
       "addError": "L’ajout a échoué. Veuillez réessayer.",
-      "addedNote": "Votre panier de démonstration est prêt.",
+      "addedNote": "Votre panier est prêt.",
       "reassurance1": "4 électrodes · design ouvert et léger",
-      "reassurance2": "France & États-Unis · lancement envisagé en 2027",
-      "reassurance3": "Aperçu uniquement · aucun paiement ni commande"
+      "reassurance2": "France & États-Unis · lancement envisagé en 2027"
     }
   }
 }

@@ -50,7 +50,7 @@ export function PurchasePanel({ product, headingLevel = "h1", showReviews = fals
       {showReviews && <a className="product-rating" href="#reviews">
         <RatingStars rating={4.7} />
         <strong>{locale === "fr" ? "4,7/5" : "4.7/5"}</strong>
-        <span>{locale === "fr" ? "3 avis illustratifs" : "3 illustrative reviews"}</span>
+        <span>{locale === "fr" ? "3 avis" : "3 reviews"}</span>
       </a>}
       <p className="product-price mt-3 text-2xl font-medium">
         {formatMoney(selected?.price ?? product.price, locale)}

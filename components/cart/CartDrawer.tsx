@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 import type { CartLine } from "@/lib/shopify/types";
 import { formatMoney } from "@/lib/money";
 import { cn } from "@/lib/cn";
@@ -112,8 +112,8 @@ function LineItem({ line }: { line: CartLine }) {
 export function CartDrawer() {
   const t = useTranslations("cart");
   const locale = useLocale();
-  const { cart, isOpen, closeCart, hasError } = useCart();
-  const [showMockNotice, setShowMockNotice] = useState(false);
+  const { cart, isOpen, closeCart, hasError, pendingLineId } = useCart();
+  const router = useRouter();
   const panelRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -133,7 +133,9 @@ export function CartDrawer() {
 
   const isEmpty = !cart || cart.lines.length === 0;
   const handleCheckout = () => {
-    if (cart) setShowMockNotice(true);
+    if (!cart || pendingLineId) return;
+    closeCart();
+    router.push("/checkout");
   };
 
   return (
@@ -141,10 +143,7 @@ export function CartDrawer() {
       ref={panelRef}
       aria-label={t("title")}
       onCancel={closeCart}
-      onClose={() => {
-        setShowMockNotice(false);
-        closeCart();
-      }}
+      onClose={closeCart}
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           const r = e.currentTarget.getBoundingClientRect();
@@ -227,20 +226,12 @@ export function CartDrawer() {
                 {formatMoney(cart.cost.subtotalAmount, locale)}
               </span>
             </div>
-            <p className="mt-1 text-xs text-slate-soft">{t("shippingNote")}</p>
-            {showMockNotice && (
-              <p
-                role="status"
-                className="mt-3 rounded-xl bg-mist px-4 py-3 text-xs text-slate-soft"
-              >
-                {t("mockCheckoutNotice")}
-              </p>
-            )}
             <Button
               fullWidth
               size="lg"
               className="mt-4"
               onClick={handleCheckout}
+              disabled={!!pendingLineId}
             >
               {t("checkout")}
             </Button>

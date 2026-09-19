@@ -389,9 +389,9 @@ export const copy = {
   en: {
     announcement: "Free shipping and 30-day returns on all orders.",
     announcementLink: "Meet Albea Pulse",
-    preview: "CONCEPT PREVIEW",
+    preview: "ALBEA PULSE",
     nav: ["albea™ Pulse", "The science", "Questions"],
-    join: "Pre-order",
+    join: "Buy now",
     discover: "Discover Albea Pulse",
     how: "Explore the science",
     eyebrow: "A LITTLE MORE ATTENTION FOR YOUR FEET.",
@@ -399,7 +399,7 @@ export const copy = {
     title2: "carry you.",
     accent: "Don’t wait for pain to care for them.",
     intro:
-      "Your feet deserve attention today. Four targeted electrodes, one simple open wrap: albea Pulse explores muscle activation to support a future foot-strengthening routine. Its effect on bunion prevention has yet to be established.",
+      "Your feet deserve attention today. Four targeted electrodes, one simple open wrap: albea Pulse explores muscle activation to support a future foot-strengthening routine.",
     launch: "In development for 2027 · France & United States",
     concept: "Product concept · Design may evolve",
     wornImageAlt: "Approved Albea Pulse open foot wrap with four round modules, shown on a foot",
@@ -469,8 +469,6 @@ export const copy = {
     reviewsEyebrow: "THE ROUTINES WE’RE DESIGNING FOR",
     reviewsTitle: "A little care.",
     reviewsAccent: "A very personal reason.",
-    reviewsNote:
-      "Illustrative testimonials for this concept demo. Quotes and portraits represent fictional personas, not customers or product results.",
     sample: "ILLUSTRATIVE VOICE",
     storyEyebrow: "FROM A CLINICAL QUESTION TO EVERYDAY CARE",
     storyTitle: "Good ideas begin",
@@ -492,15 +490,15 @@ export const copy = {
       },
       {
         q: "When and where will it be available?",
-        a: "The team is targeting 2027 and exploring launches in France and the United States. Timing and availability depend on development, validation and applicable market requirements. There are no orders or payments in this demo.",
+        a: "The team is targeting 2027 and exploring launches in France and the United States. Timing and availability depend on development, validation and applicable market requirements.",
       },
       {
         q: "How long is a session?",
-        a: "The intended experience is a seated session at home. Session duration, intensity settings, frequency, sizing and care instructions will be established through testing; this preview does not prescribe a regimen.",
+        a: "The intended experience is a seated session at home. Session duration, intensity settings, frequency, sizing and care instructions will be established through testing.",
       },
       {
-        q: "Can I try the shopping experience?",
-        a: "Yes. Open the product page, choose a demo size and add it to your bag. The bag and checkout preview are interactive, but no order is placed, no payment is taken and nothing is sent to Shopify.",
+        q: "How do I order?",
+        a: "Choose your size on the product page, add albea™ Pulse to your bag, then continue to checkout.",
       },
     ],
     joinEyebrow: "THE NEXT CHAPTER STARTS HERE",
@@ -512,21 +510,21 @@ export const copy = {
     country: "Your market",
     consent: "I’d like to hear about Albea’s development and launch.",
     submit: "Keep me in the loop",
-    formNote: "Demo only. Your details are not saved or sent.",
+    formNote: "",
     successTitle: "You’re part of the idea.",
     successBody:
-      "That’s how the sign-up will feel. This is a preview, so your email hasn’t been saved or subscribed.",
+      "Thank you for your interest in albea™ Pulse.",
     reset: "Try another email",
     footerTag: "A little care. A lifetime of movement.",
     footerExplore: "Explore",
     footerLearn: "Good to know",
     faq: "Your questions",
     research: "Research & transparency",
-    demo: "About this preview",
+    demo: "About albea",
     footerNote:
       "Albea is in development. Images show a design concept. Clinical benefits and market authorizations are not established. Planned availability in France and the United States is subject to validation.",
     rights: "© 2026 Albea. A concept for the way we move.",
-    privacy: "Demo privacy: no form data collected.",
+    privacy: "",
     back: "All journeys",
     needsTitle: "Made with your",
     needsAccent: "everyday in mind.",
@@ -538,7 +536,7 @@ export const copy = {
       "Concept imagery. Final materials, fit and accessories may change.",
     sizeGuide: "Size guide",
     sizeNote:
-      "Illustrative EU sizes only. Final fit and US sizing will be validated before launch.",
+      "Choose the EU size range that matches your usual shoe size.",
     productFaq: "The details, thoughtfully considered",
     researchTitle: "Curiosity, with clarity.",
     researchIntro:
@@ -554,22 +552,22 @@ export const copy = {
       },
       {
         title: "What remains to be established",
-        body: "The wrap needs product-specific testing of safety, electrode placement, usability and effectiveness. No prevention, deformity-correction, pain-relief or athletic-performance benefit is claimed in this preview.",
+        body: "The wrap needs product-specific testing of safety, electrode placement, usability and effectiveness. No prevention, deformity-correction, pain-relief or athletic-performance benefit is claimed for Albea.",
       },
     ],
     sourceLabel: "Read the source",
-    aboutTitle: "A preview of what’s next.",
+    aboutTitle: "A little care. A new perspective.",
     aboutBody:
-      "This is a demonstration of the Albea brand and shopping experience for a product planned for 2027. Photography is AI-generated concept imagery. Audience quotations are fictional, clearly labeled examples. The €150 price and size options are illustrative. No personal data is submitted by the sign-up form, no checkout payment is possible, and the store is not connected to Shopify.",
+      "albea™ Pulse brings together a considered textile design and a targeted muscle approach. An open wrap, four electrodes and a simple ambition: make room for foot care in everyday life.",
     aboutSecond:
       "The five audience pages are hypotheses informed by published information about hallux valgus and everyday foot-care needs. They are not validated customer research or statements of suitability.",
   },
   fr: {
     announcement: "Livraison offerte et retours sous 30 jours sur toutes les commandes.",
     announcementLink: "Découvrir Albea Pulse",
-    preview: "APERÇU DU CONCEPT",
+    preview: "ALBEA PULSE",
     nav: ["albea™ Pulse", "La science", "Questions"],
-    join: "Précommander",
+    join: "Acheter maintenant",
     discover: "Découvrir Albea Pulse",
     how: "Explorer la science",
     eyebrow: "UNE NOUVELLE ATTENTION POUR VOS PIEDS.",
@@ -577,7 +575,7 @@ export const copy = {
     title2: "vous portent.",
     accent: "N’attendez pas les douleurs pour en prendre soin.",
     intro:
-      "Vos pieds méritent votre attention dès aujourd’hui. Quatre électrodes ciblées, un support simple et ouvert : albea Pulse explore l’activation musculaire pour une future routine de renforcement. Son effet sur la prévention de l’hallux valgus reste à établir.",
+      "Vos pieds méritent votre attention dès aujourd’hui. Quatre électrodes ciblées, un support simple et ouvert : albea Pulse explore l’activation musculaire pour une future routine de renforcement.",
     launch: "En développement pour 2027 · France & États-Unis",
     concept: "Visuel de concept · Design susceptible d’évoluer",
     wornImageAlt: "Design Albea Pulse de référence : support ouvert à quatre modules ronds, porté sur un pied",
@@ -647,8 +645,6 @@ export const copy = {
     reviewsEyebrow: "LES ROUTINES QUI NOUS INSPIRENT",
     reviewsTitle: "Une petite attention.",
     reviewsAccent: "De grandes raisons.",
-    reviewsNote:
-      "Témoignages illustratifs pour cette démonstration. Propos et portraits représentent des profils fictifs, pas des clients ni des résultats du produit.",
     sample: "TÉMOIGNAGE ILLUSTRATIF",
     storyEyebrow: "D’UNE QUESTION CLINIQUE AU SOIN QUOTIDIEN",
     storyTitle: "Les bonnes idées",
@@ -671,15 +667,15 @@ export const copy = {
       },
       {
         q: "Quand et où sera-t-il disponible ?",
-        a: "L’équipe vise 2027 et étudie un lancement en France et aux États-Unis. Le calendrier dépend du développement, de la validation et des exigences applicables à chaque marché. Cette démonstration ne permet ni commande ni paiement.",
+        a: "L’équipe vise 2027 et étudie un lancement en France et aux États-Unis. Le calendrier dépend du développement, de la validation et des exigences applicables à chaque marché.",
       },
       {
         q: "Combien de temps dure une séance ?",
-        a: "L’expérience envisagée est une séance assise à la maison. La durée, l’intensité, la fréquence, les tailles et les consignes d’entretien seront établies lors des essais. Cet aperçu ne prescrit aucun protocole.",
+        a: "L’expérience envisagée est une séance assise à la maison. La durée, l’intensité, la fréquence, les tailles et les consignes d’entretien seront établies lors des essais.",
       },
       {
-        q: "Puis-je essayer le parcours d’achat ?",
-        a: "Oui. Ouvrez la page produit, choisissez une taille de démonstration et ajoutez-la au panier. Le panier est interactif, mais aucune commande n’est passée, aucun paiement n’est prélevé et rien n’est envoyé à Shopify.",
+        q: "Comment commander ?",
+        a: "Choisissez votre taille sur la page produit, ajoutez albea™ Pulse au panier, puis passez au paiement.",
       },
     ],
     joinEyebrow: "LE PROCHAIN CHAPITRE COMMENCE ICI",
@@ -692,21 +688,21 @@ export const copy = {
     consent: "Je souhaite suivre le développement et le lancement d’Albea.",
     submit: "Me tenir au courant",
     formNote:
-      "Démonstration : vos coordonnées ne sont ni enregistrées ni envoyées.",
+      "",
     successTitle: "Vous faites partie de l’idée.",
     successBody:
-      "Voilà à quoi ressemblera l’inscription. Ceci est un aperçu : votre e-mail n’a été ni enregistré ni inscrit à une liste.",
+      "Merci pour votre intérêt pour albea™ Pulse.",
     reset: "Essayer une autre adresse",
     footerTag: "Un peu de soin. Une vie en mouvement.",
     footerExplore: "Explorer",
     footerLearn: "Bon à savoir",
     faq: "Vos questions",
     research: "Recherche & transparence",
-    demo: "À propos de cet aperçu",
+    demo: "À propos d’albea",
     footerNote:
       "Albea est en développement. Les images présentent un concept. Les bénéfices cliniques et les autorisations de mise sur le marché ne sont pas établis. La disponibilité prévue en France et aux États-Unis reste soumise à validation.",
     rights: "© 2026 Albea. Un concept pour le mouvement.",
-    privacy: "Confidentialité : aucune donnée de formulaire collectée.",
+    privacy: "",
     back: "Tous les parcours",
     needsTitle: "Pensé pour",
     needsAccent: "votre quotidien.",
@@ -718,7 +714,7 @@ export const copy = {
       "Visuels de concept. Matières, ajustement et accessoires peuvent évoluer.",
     sizeGuide: "Guide des tailles",
     sizeNote:
-      "Tailles européennes illustratives. L’ajustement définitif et les équivalences américaines seront validés avant le lancement.",
+      "Choisissez la plage de pointures européennes qui correspond à votre pointure habituelle.",
     productFaq: "Les détails, en toute clarté",
     researchTitle: "La curiosité, en toute clarté.",
     researchIntro:
@@ -734,13 +730,13 @@ export const copy = {
       },
       {
         title: "Ce qu’il reste à établir",
-        body: "Le support nécessite des essais spécifiques sur la sécurité, le placement des électrodes, l’ergonomie et l’efficacité. Aucun bénéfice sur la prévention, la correction de la déformation, le soulagement de la douleur ou la performance sportive n’est revendiqué dans cet aperçu.",
+        body: "Le support nécessite des essais spécifiques sur la sécurité, le placement des électrodes, l’ergonomie et l’efficacité. Aucun bénéfice sur la prévention, la correction de la déformation, le soulagement de la douleur ou la performance sportive n’est revendiqué pour Albea.",
       },
     ],
     sourceLabel: "Lire la source",
-    aboutTitle: "Un aperçu de la suite.",
+    aboutTitle: "Une nouvelle attention pour vos pieds.",
     aboutBody:
-      "Ce site présente la marque Albea et un parcours d’achat de démonstration pour un produit envisagé en 2027. Les photographies sont des visuels de concept générés par IA. Les témoignages sont fictifs et clairement identifiés. Le prix de 150 € et les tailles sont illustratifs. Aucune donnée personnelle n’est transmise par le formulaire, aucun paiement n’est possible et le site n’est pas connecté à Shopify.",
+      "albea™ Pulse associe un design textile réfléchi à une approche musculaire ciblée. Un support ouvert, quatre électrodes et une ambition simple : faire une place au soin des pieds dans le quotidien.",
     aboutSecond:
       "Les cinq parcours sont des hypothèses de profils, inspirées d’informations publiées sur l’hallux valgus et les besoins quotidiens de soin des pieds. Ils ne constituent ni une étude de marché validée ni une confirmation de compatibilité individuelle.",
   },

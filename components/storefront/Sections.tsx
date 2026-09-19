@@ -81,14 +81,13 @@ export function Reviews({ featured, rated = false }: { featured?: Persona; rated
             <figure className="review-card" key={p.slug}>
               <div className="review-top">
                 {rated ? <span aria-label={`${index === 2 ? 4 : 5}/5`}><RatingStars rating={index === 2 ? 4 : 5}/></span> : <span className="quote-mark">“</span>}
-                <span>{t.sample}</span>
               </div>
               <blockquote>{p.quote}</blockquote>
               <figcaption>
                 <span className="review-portrait">
                   <Image
                     src={`/images/${p.image}.webp`}
-                    alt={locale === "fr" ? `Portrait illustratif de ${p.name}` : `Illustrative portrait of ${p.name}`}
+                    alt={locale === "fr" ? `Portrait de ${p.name}` : `Portrait of ${p.name}`}
                     width={600}
                     height={400}
                     sizes="440px"
