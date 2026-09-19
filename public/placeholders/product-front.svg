@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#eef4f8"/>
+  <path d="M660 260 L660 620 Q660 700 600 738 L400 856 Q322 902 362 972 Q404 1038 486 1002 L760 876 Q844 832 844 726 L844 260 Q844 236 820 236 L684 236 Q660 236 660 260 Z"
+        fill="#ffffff" stroke="#33647f" stroke-width="6" opacity="0.9"/>
+  <rect x="648" y="200" width="208" height="72" rx="18" fill="#d9e7ef" stroke="#33647f" stroke-width="5"/>
+  <rect x="120" y="1060" width="960" height="70" rx="35" fill="#ffffff" opacity="0.85"/>
+  <text x="600" y="1105" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" fill="#5c6d78">PLACEHOLDER  FRONT VIEW</text>
+</svg>

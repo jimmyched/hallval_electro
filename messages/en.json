@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Albea — A little care. A lifetime of movement.",
+    "description": "Meet Albea Pulse, an open foot wrap with four electrodes exploring targeted activation of the big-toe muscle. In development for 2027, for France and the United States."
+  },
+  "cart": {
+    "title": "Your demo pre-order",
+    "openCart": "Open bag, {count, plural, =0 {empty} one {# item} other {# items}}",
+    "close": "Close bag",
+    "empty": "Your next little act of care starts here.",
+    "shopCta": "Discover Albea",
+    "subtotal": "Illustrative subtotal",
+    "shippingNote": "Preview only. Final price, delivery and taxes are to be confirmed.",
+    "checkout": "Complete demo pre-order",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity",
+    "error": "The bag could not be updated. Please try again.",
+    "mockCheckoutNotice": "You’ve reached the end of the demo. No order has been placed and no payment has been taken. Launch is planned for 2027."
+  },
+  "product": {
+    "purchase": {
+      "eyebrow": "THE ALBEA CONCEPT · PLANNED FOR 2027",
+      "summary": "Albea Pulse. An open textile wrap, four integrated electrodes and one considered intention: to explore activation of the abductor hallucis, the muscle along your inner foot.",
+      "sizeLabel": "Choose a demo size",
+      "variantSoldOut": "Unavailable in this demo",
+      "quantityLabel": "Quantity",
+      "decrease": "Decrease quantity",
+      "increase": "Increase quantity",
+      "soldOut": "Coming soon",
+      "adding": "Adding…",
+      "added": "Added to your bag",
+      "addToCart": "Add to cart",
+      "addError": "Could not add this item. Please try again.",
+      "addedNote": "Your demo bag is ready.",
+      "reassurance1": "4 electrodes · an open, lightweight concept",
+      "reassurance2": "France & United States · planned for 2027",
+      "reassurance3": "Preview only · no payment or order"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfaf8"/>
+      <stop offset="1" stop-color="#d9e7ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg2)"/>
+  <circle cx="600" cy="540" r="220" fill="#ffffff" opacity="0.75"/>
+  <path d="M560 400 L560 560 Q560 610 525 632 L430 688 Q390 712 410 748 Q432 782 474 764 L610 702 Q656 678 656 622 L656 400 Q656 386 642 386 L574 386 Q560 386 560 400 Z"
+        fill="#ffffff" stroke="#33647f" stroke-width="5"/>
+  <rect x="120" y="1060" width="960" height="70" rx="35" fill="#ffffff" opacity="0.85"/>
+  <text x="600" y="1105" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" fill="#5c6d78">PLACEHOLDER  LIFESTYLE PHOTO</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#f9edeb"/>
+  <path d="M660 260 L660 620 Q660 700 600 738 L400 856 Q322 902 362 972 Q404 1038 486 1002 L760 876 Q844 832 844 726 L844 260 Q844 236 820 236 L684 236 Q660 236 660 260 Z"
+        fill="#ffffff" stroke="#33647f" stroke-width="6" opacity="0.9"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" font-weight="bold">
+    <circle cx="700" cy="560" r="26" fill="#33647f"/><text x="700" y="570" text-anchor="middle">1</text>
+    <circle cx="700" cy="660" r="26" fill="#33647f"/><text x="700" y="670" text-anchor="middle">2</text>
+    <circle cx="540" cy="860" r="26" fill="#33647f"/><text x="540" y="870" text-anchor="middle">3</text>
+    <circle cx="640" cy="880" r="26" fill="#33647f"/><text x="640" y="890" text-anchor="middle">4</text>
+  </g>
+  <rect x="120" y="1060" width="960" height="70" rx="35" fill="#ffffff" opacity="0.85"/>
+  <text x="600" y="1105" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" fill="#5c6d78">PLACEHOLDER  ELECTRODE PLACEMENT</text>
+</svg>

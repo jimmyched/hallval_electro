@@ -1,0 +1,100 @@
+[
+  {
+    "route": "/fr",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/science",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false,
+    "sources": 12
+  },
+  {
+    "route": "/fr/product/albea",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/for/early-signs",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/for/family-history",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/for/active-living",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/for/on-your-feet",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/fr/for/lifelong-movement",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/science",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false,
+    "sources": 15
+  },
+  {
+    "route": "/en/product/albea",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/for/early-signs",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/for/family-history",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/for/active-living",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/for/on-your-feet",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  },
+  {
+    "route": "/en/for/lifelong-movement",
+    "headingCount": 1,
+    "oldElectrodeCopy": false,
+    "personaDirectory": false
+  }
+]
