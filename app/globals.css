@@ -1942,8 +1942,9 @@ img {
   }
 }
 
-/* Full-bleed campaign hero. Keep the photograph's seated model clear of copy. */
+/* Bounded hero composition with a full-width forest backdrop. */
 .hero.hero-wide {
+  --hero-height: clamp(560px, 40vw, 720px);
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -1969,14 +1970,15 @@ img {
   background: linear-gradient(90deg, var(--theme-dark-alpha-0, #14231b00) 30%, var(--theme-dark-alpha-46, #172b202e) 48%, var(--theme-dark-alpha-194, #172b20c2) 74%, var(--theme-dark-alpha-230, #172b20e6) 100%);
 }
 .hero-stage {
-  min-height: max(680px, 60vw);
+  min-height: 0;
+  height: var(--hero-height);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 .hero-wide .hero-copy {
   width: 43%;
-  padding: 64px 0 84px;
+  padding: 32px 0;
 }
 .hero-wide .hero-copy h1 {
   font-size: clamp(42px, 4.1vw, 62px);
@@ -2001,12 +2003,33 @@ img {
   font-size: 14px;
 }
 .hero-wide .hero-actions { gap: 24px; flex-wrap: wrap; }
-.hero-wide .button {
-  color: var(--theme-ink, #263d2c);
-  background: var(--theme-surface, #f6f4e9);
-  border-color: var(--theme-line, #f6f4e9);
+/* A dedicated warm accent keeps the purchase action distinct in every palette. */
+.hero-wide .hero-buy-button {
+  min-height: 56px;
+  padding: 16px 26px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #242b22;
+  background: #f6c76a;
+  border: 1px solid #ffdfa0;
+  box-shadow: 0 4px 18px #00000030, inset 0 1px 0 #ffffff55;
+  transition: background .2s, box-shadow .2s, transform .2s;
 }
-.hero-wide .button:hover { background: var(--theme-surface-tint, #dfe7d1); border-color: var(--theme-line, #dfe7d1); }
+.hero-wide .hero-buy-button:hover {
+  background: #ffda8a;
+  border-color: #ffe7b8;
+  box-shadow: 0 7px 24px #00000040, inset 0 1px 0 #ffffff70;
+}
+.hero-wide .hero-buy-button:focus-visible {
+  outline: 3px solid #fffdf7;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px #242b22;
+}
+.hero-wide .hero-buy-button:active { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .hero-wide .hero-buy-button { transition: none; }
+  .hero-wide .hero-buy-button:hover { transform: none; }
+}
 .hero-wide .text-link { color: var(--theme-inverse, #fffdf7); border-color: var(--theme-inverse-alpha-153, #d8dfce99); }
 .hero-wide .text-link:hover { color: var(--theme-on-dark-muted, #dce6ce); }
 .hero-wide .hero-launch { color: var(--theme-on-dark-muted, #e2e6d8); }
@@ -2018,20 +2041,33 @@ img {
   color: var(--theme-inverse, #fffdf7);
   text-shadow: 0 1px 5px var(--theme-ink, #15261a);
 }
+@media (min-width: 761px) {
+  .hero-background {
+    width: min(100%, 1800px);
+    left: max(0px, calc((100% - 1800px) / 2));
+    right: auto;
+  }
+  .hero-background img { object-position: center; }
+}
+@media (min-width: 1801px) {
+  .hero-background { mask-image: linear-gradient(90deg, transparent, #000 8%, #000 90%, transparent); }
+}
 @media (min-width: 761px) and (max-width: 1100px) {
+  .hero.hero-wide { --hero-height: 660px; }
+  .hero-background img { object-position: 28% center; }
   .hero-wide .hero-copy { width: 45%; }
   .hero-wide .hero-copy h1 { font-size: 52px; }
   .hero-wide .hero-intro { font-size: 13px; }
 }
 @media (max-width: 760px) {
   .hero-background { height: 450px; bottom: auto; }
-  .hero-background img { object-position: 45% center; }
+  .hero-background img { object-position: 25% center; }
   .hero-wide::after {
     height: 452px;
     bottom: auto;
     background: linear-gradient(180deg, transparent 72%, var(--theme-dark-alpha-51, #263b3033) 87%, var(--theme-dark, #263b30) 100%);
   }
-  .hero-stage { min-height: 0; padding-top: 448px; padding-bottom: 38px; }
+  .hero-stage { height: auto; min-height: 0; padding-top: 448px; padding-bottom: 38px; }
   .hero-wide .hero-copy { width: 100%; padding: 20px 0 0; }
   .hero-wide .hero-copy h1 { font-size: 50px; line-height: 1.06; }
   html[lang="fr"] .hero-wide .hero-copy h1 { font-size: 48px; }

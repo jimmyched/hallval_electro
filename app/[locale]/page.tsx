@@ -23,7 +23,7 @@ export default async function HomePage({
       <section className="hero hero-wide">
         <div className="hero-background">
           <Image
-            src="/images/lifestyle-wrap-woman.webp"
+            src="/images/hero-woman-panorama.webp"
             alt={t.heroLifestyleAlt}
             fill
             priority
@@ -43,7 +43,7 @@ export default async function HomePage({
             </h1>
             <p className="hero-intro">{t.intro}</p>
             <div className="hero-actions">
-              <Link className="button" href="/product/albea">
+              <Link className="button hero-buy-button" href="/product/albea">
                 {t.join}
                 <Icon width="19" />
               </Link>
