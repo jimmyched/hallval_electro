@@ -34,6 +34,10 @@ Every route exists under `/en` and `/fr`:
 
 The five `/for/` campaign pages are direct-access landing pages. No directory or link to them is exposed in the storefront navigation. Each contains audience-specific copy, cited evidence, product explanation, illustrative testimonial, inline demo preorder panel and FAQs.
 
+## Naming research
+
+The full naming review is available by direct link at `/research/naming.html`. It preserves all 86 candidates, decisions and international analysis, with editable shortlists saved per browser. The page is unlinked from the storefront and sends explicit noindex instructions. See [the research update guide](docs/naming-research.md).
+
 ## Demo behavior
 
 The Shopify adapter is explicitly disabled in `lib/shopify/index.ts`, even if credentials exist in the environment. Mock carts live in server memory and survive development hot reloads but not a server restart; a browser cookie identifies each cart. Checkout only shows a local completion notice. Form details are never persisted or transmitted. The €150 price, EU sizes and product imagery are illustrative.

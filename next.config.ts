@@ -6,6 +6,16 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const nextConfig: NextConfig = {
   devIndicators: false,
   distDir: process.env.ALBEA_BUILD_DIR || ".next",
+  async headers() {
+    return [
+      {
+        source: "/research/:path*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
