@@ -36,7 +36,7 @@ The five `/for/` campaign pages are direct-access landing pages. No directory or
 
 ## Naming research
 
-The full naming review is available by direct link at `/research/naming.html`. It preserves all 88 candidates, decisions and international analysis in French and English, including the founders’ Napsnap, Klavek and Soluen review. Language and editable shortlists are saved per browser. The page is unlinked from the storefront and sends explicit noindex instructions. See [the research update guide](docs/naming-research.md).
+The full naming review is available by direct link at `/research/naming.html`. It preserves all 101 candidates, decisions and international analysis in French and English, including the founders’ Napsnap, Klavek and Soluen review and the 14-name exploration around “simple”. Earlier exploration rounds remain available. Language and editable shortlists are saved per browser. The page is unlinked from the storefront and sends explicit noindex instructions. See [the research update guide](docs/naming-research.md).
 
 ## Demo behavior
 
