@@ -2,7 +2,7 @@
 
 The direct-access review is served at `/research/naming.html`. It is not linked from the storefront or a sitemap.
 
-The page contains the complete research as of 9 October 2026: 101 names, audience analysis, earlier decisions, the Apricot Vale × Dayable exploration, Dayable’s French/international review, the founders’ Napsnap, Klavek and Soluen proposals, and 14 candidates around the word “simple” (13 new names plus Unfussy revisited). The Explorations section retains both the Simple round and the earlier Apricot Vale × Dayable crossover. The full interface and research are available in French and English; new visitors start in French. Candidate names remain unchanged. Domain prices and trademark observations retain their original dates and limitations.
+The page contains the complete research as of 13 October 2026: 124 names, audience analysis, earlier decisions, the Apricot Vale × Dayable exploration, Dayable’s French/international review, the founders’ Napsnap, Klavek and Soluen proposals, and 14 candidates around the word “simple” (13 new names plus Unfussy revisited). The Explorations section retains the Clinical trust and Simple rounds and the earlier Apricot Vale × Dayable crossover. The full interface and research are available in French and English; new visitors start in French. Candidate names remain unchanged. Domain prices and trademark observations retain their original dates and limitations.
 
 Both the HTML document and its embedded review include `noindex, nofollow, noarchive` metadata. Next.js also sends an `X-Robots-Tag` header for `/research/*`. Do not block this path in robots.txt: crawlers need to fetch it to read the noindex instruction. This is an unlisted public page, not access control. The repository and its source are public too.
 
@@ -29,3 +29,11 @@ After deployment, verify that `/research/naming.html` returns 200 with `X-Robots
 The 9 October Simple round groups names by sound, daily routine and attitude. Its audience rationale, US/French pronunciation hypotheses, source links and suggested buyer test are available in both languages. Quotes cover .com, .net, .shop, .life and .fr for all 14 names, with .co, .org and .io for the nine developed options: 97 exact-domain lookups in total. Registrar purchase offers and registry observations remain distinct; no name is presented as trademark-cleared.
 
 Unfussy remains one record. Its earlier history, reasoning and dated domain quotes are retained before the new assessment. No candidate is automatically added to or removed from a visitor’s shortlist. The original 88 records and the original shortlist seed are preserved.
+
+## Clinical trust exploration
+
+The 13 October round examines the audience fit of a more clinical identity through 27 names (23 new, four revisited), ten product benchmarks and three visual treatments of Dayable. Direction & names and Comparable products are separate views inside the same exploration. French and English include audience motivations, naming architecture, existing-use leads, pronunciation hypotheses and a proposed buyer test. The recommended direction is the attentive practitioner: composed expertise with everyday warmth. This is desk research, not measured buyer preference or legal clearance.
+
+169 exact registrar lookups cover .com, .net, .shop, .life, .co and .fr for all 27 names; seven also have .org quotes. All 27 .com names have registry records. Of 27 .fr checks, nine were registered, 16 had no record and two were inconclusive; no .fr purchase quote was obtained. Available offers display first-year and renewal prices. Domain availability is separate from trademark rights.
+
+Dayable, Deftly, Klavek and Soluen remain their original records. Earlier rationale, domain observations and history were preserved before appending the new review; founder domain rows display each record’s date. All original 101 records and saved shortlist choices remain. Clinical cards support profiles, shortlist editing and independent comparisons. The local exploration tab also persists across reloads.
