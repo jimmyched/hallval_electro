@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:brands": "node --experimental-strip-types --test tests/brand.test.mjs",
     "test:themes": "node --experimental-strip-types --test tests/theme.test.mjs"
   },
   "dependencies": {

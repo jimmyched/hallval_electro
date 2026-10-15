@@ -38,6 +38,10 @@ The five `/for/` campaign pages are direct-access landing pages. No directory or
 
 The full naming review is available by direct link at `/research/naming.html`. It preserves all 124 candidates, decisions and international analysis in French and English, including the founders’ Napsnap, Klavek and Soluen review and the 14-name exploration around “simple”, and the clinical-trust exploration with 27 names and 10 product benchmarks. Earlier exploration rounds remain available. Language and editable shortlists are saved per browser. The page is unlinked from the storefront and sends explicit noindex instructions. See [the research update guide](docs/naming-research.md).
 
+## Five brand identities
+
+Open `/fr/brands` or `/en/brands` to compare Dayable, Soluen, DearTempo, Good Measure and Ordelan. Each has a full website preview, packaging mockup and bilingual brand voice guide. The original naming research remains intact. See [the brand preview guide](docs/brand-previews.md).
+
 ## Demo behavior
 
 The Shopify adapter is explicitly disabled in `lib/shopify/index.ts`, even if credentials exist in the environment. Mock carts live in server memory and survive development hot reloads but not a server restart; a browser cookie identifies each cart. Checkout only shows a local completion notice. Form details are never persisted or transmitted. The €150 price, EU sizes and product imagery are illustrative.
@@ -76,4 +80,4 @@ theme resolution and URL handling.
 
 For an isolated production preview while development is running, use `ALBEA_BUILD_DIR=.next-build npm run build`, then `ALBEA_BUILD_DIR=.next-build npm start -- --hostname 127.0.0.1 --port 3001`.
 
-Clinical claims, final electrode placement, technical specifications, founder details, pricing and regulatory status need product-team validation before a public launch. No actual launch or deployment has been performed.
+Clinical claims, final electrode placement, technical specifications, founder details, pricing and regulatory status need product-team validation before a public launch. This is a published presentation demo, not a commercial product launch.

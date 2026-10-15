@@ -1,8 +1,10 @@
 "use client";
+import { useBrand, useBrandCopy } from "@/components/branding/BrandProvider";
+import { brandCatalog } from "@/lib/brands";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+
 import { Link } from "@/i18n/navigation";
-import { copy, localeOf } from "@/lib/content";
+
 import { Icon } from "./Icon";
 
 const electrodes = [
@@ -13,7 +15,8 @@ const electrodes = [
 ];
 
 export function Science() {
-  const t = copy[localeOf(useLocale())];
+  const t = useBrandCopy();
+  const brand = useBrand();
   const [active, setActive] = useState(0);
   return (
     <section className="science-section section" id="how-it-works">
@@ -28,7 +31,7 @@ export function Science() {
         <div className="science-grid">
           <div className="anatomy-card">
             <div className="diagram-top">
-              <span>ALBEA / PULSE</span>
+              <span>{brand ? brandCatalog[brand].name : "ALBEA / PULSE"}</span>
               <span>{t.diagramView}</span>
             </div>
             <svg

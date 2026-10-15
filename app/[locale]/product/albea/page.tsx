@@ -1,8 +1,10 @@
+import { getBrand, getBrandCopy } from "@/lib/brand-server";
+import { brandCatalog } from "@/lib/brands";
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getProduct } from "@/lib/shopify";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 import { ProductGallery } from "@/components/product/ProductGallery";
 import { PurchasePanel } from "@/components/product/PurchasePanel";
 import { Science } from "@/components/storefront/Science";
@@ -15,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = copy[localeOf(locale)];
+  const t = await getBrandCopy(localeOf(locale));
   return { title: t.productTitle, description: t.intro };
 }
 export default async function ProductPage({
@@ -25,8 +27,9 @@ export default async function ProductPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = copy[localeOf(locale)];
+  const t = await getBrandCopy(localeOf(locale));
   const product = await getProduct();
+  const brand = await getBrand();
   return (
     <div className="product-page-layout">
       <section className="product-page container">
@@ -34,14 +37,14 @@ export default async function ProductPage({
           className="product-breadcrumb"
           aria-label={locale === "fr" ? "Fil d’Ariane" : "Breadcrumb"}
         >
-          <Link href="/">Albea</Link>
+          <Link href="/">{brand ? brandCatalog[brand].name : "Albea"}</Link>
           <span>/</span>
           <span>{t.productTitle}</span>
         </nav>
         <div className="product-grid">
           <div>
             <ProductGallery images={product.images} />
-            <ProductCommitments />
+            {!brand && <ProductCommitments />}
           </div>
           <PurchasePanel product={product} showReviews />
         </div>

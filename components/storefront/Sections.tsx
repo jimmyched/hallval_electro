@@ -1,7 +1,10 @@
+"use client";
+import { useBrand, useBrandCopy } from "@/components/branding/BrandProvider";
+
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { copy, personas, localeOf, type Persona } from "@/lib/content";
+import { personas, localeOf, type Persona } from "@/lib/content";
 import { Icon } from "./Icon";
 import { RatingStars } from "@/components/product/RatingStars";
 import { ProductComments } from "@/components/product/ProductComments";
@@ -15,7 +18,7 @@ const portraitCrops = {
 } as const;
 export function Routine() {
   const locale = localeOf(useLocale());
-  const t = copy[locale];
+  const t = useBrandCopy();
   return (
     <section className="section routine-section">
       <div className="container routine-grid">
@@ -62,7 +65,9 @@ export function Routine() {
 }
 export function Reviews({ featured, rated = false }: { featured?: Persona; rated?: boolean }) {
   const locale = localeOf(useLocale());
-  const t = copy[locale];
+  const t = useBrandCopy();
+  const brand = useBrand();
+  if (brand) return null;
   const voices = featured
     ? [featured]
     : [personas[locale][0], personas[locale][3], personas[locale][4]];
@@ -111,7 +116,7 @@ export function Reviews({ featured, rated = false }: { featured?: Persona; rated
   );
 }
 export function FaqSection({ extra }: { extra?: { q: string; a: string } }) {
-  const t = copy[localeOf(useLocale())];
+  const t = useBrandCopy();
   const items = extra ? [extra, ...t.faqs] : t.faqs;
   return (
     <section className="faq-section section" id="faq">

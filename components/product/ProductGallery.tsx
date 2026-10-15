@@ -1,13 +1,16 @@
 "use client";
+import { useBrand, useBrandCopy } from "@/components/branding/BrandProvider";
+import { brandText } from "@/lib/brands";
 import Image from "next/image";
 import { useState } from "react";
 import { useLocale } from "next-intl";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 import type { ProductImage } from "@/lib/shopify/types";
 export function ProductGallery({ images }: { images: ProductImage[] }) {
   const [active, setActive] = useState(0);
   const locale = localeOf(useLocale());
-  const t = copy[locale];
+  const t = useBrandCopy();
+  const brand = useBrand();
   const galleryAlts = [
     t.wornImageAlt,
     locale === "fr" ? "Albea Pulse, vue de trois quarts sur fond sauge" : "Albea Pulse, three-quarter view on a sage background",
@@ -20,7 +23,7 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
       <div className="product-gallery-main">
         <Image
           src={images[active].url}
-          alt={galleryAlts[active] || images[active].altText}
+          alt={brandText(galleryAlts[active] || images[active].altText || "",brand,locale)}
           fill
           priority
           sizes="(max-width:760px) 100vw,50vw"

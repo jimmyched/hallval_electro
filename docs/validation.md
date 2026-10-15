@@ -61,3 +61,12 @@ The demo uses in-memory carts; restarting the server resets them. This is intent
 - Replaced the rough foot paths with a professionally illustrated medial foot, retaining localized labels and all four accessible electrode controls. Prompt and asset provenance: anatomy-illustration.md.
 - Production build, TypeScript and lint passed. Browser checks: French cart add/remove, keyboard selection of fourth electrode and matching list state, rating-to-review anchor, 4-star local comment submission and confirmation, English copy and mobile badge layout. Test comment cleared by navigation and test cart item removed.
 - Screenshots: product-commitments-ratings-fr.png, product-commitments-mobile-en.png, foot-anatomy-updated-fr.png, product-reviews-fr.png.
+
+## Five brand identities — October 15, 2026
+
+- Added bilingual comparison and packaging/voice pages for Dayable, Soluen, DearTempo, Good Measure and Ordelan, with five distinct homepage compositions and identity styling throughout the demo.
+- Production build and lint pass. All 15 brand-helper tests and five legacy-theme tests pass.
+- Independent HTTP audit covered 100 bilingual brand, product, science, about, packaging and audience routes: 200 responses, correct identity, no visible Albea leaks, retained brand navigation and noindex metadata. Original Albea home/product pages remain intact. Naming research is unchanged byte-for-byte.
+- Browser checked desktop and 390px mobile versions of all five identities; verified brand switching on the same product page, French/English continuity, size and quantity selection, cart, and local-only checkout completion with fictional data. Reviewed French packaging, the comparison gallery and browser logs (no errors/warnings).
+- Fixed consonant-name elisions in French. Concept previews omit synthetic ratings/testimonials and unconfirmed commitments; checkout labels prices and terms as illustrative. Good Measure uses an ungraduated graphic rule consistent with its voice guide.
+- Packaging mockups are concepts, not production artwork. Names, final product claims, dimensions, sourcing and launch terms remain to be validated independently.

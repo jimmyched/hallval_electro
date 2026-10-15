@@ -14,6 +14,12 @@ import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { resolveTheme, THEME_HEADER } from "@/lib/theme";
 import "../globals.css";
+import "../brands.css";
+import "../brand-review.css";
+import { BrandProvider } from "@/components/branding/BrandProvider";
+import { BrandReviewBar } from "@/components/branding/BrandReviewBar";
+import { getBrand } from "@/lib/brand-server";
+import { brandCatalog } from "@/lib/brands";
 
 const inter = localFont({
   src: "../../public/fonts/inter-latin.woff2",
@@ -50,6 +56,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const brand = await getBrand();
+  if (brand) return { title: { default: brandCatalog[brand].name, template: `%s — ${brandCatalog[brand].name}` }, description: brandCatalog[brand].line[locale === "fr" ? "fr" : "en"], robots: { index: false, follow: false } };
   return {
     title: {
       default: t("title"),
@@ -74,23 +82,27 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const initialCart = await getInitialCart();
+  const brand = await getBrand();
   const theme = resolveTheme((await headers()).get(THEME_HEADER));
 
   return (
     <html
       lang={locale}
       data-theme={theme}
+      data-brand={brand || undefined}
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${fraunces.variable}`}
     >
       <body className="flex min-h-screen flex-col font-sans">
         <NextIntlClientProvider>
+          <BrandProvider>
           <ThemeProvider>
             <CartProvider initialCart={initialCart}>
               <a href="#main-content" className="skip-link">
                 {locale === "fr" ? "Aller au contenu" : "Skip to content"}
               </a>
               <ScrollReset />
+              <BrandReviewBar />
               <Header />
               <main id="main-content" className="flex-1">
                 {children}
@@ -99,6 +111,7 @@ export default async function LocaleLayout({
               <CartDrawer />
             </CartProvider>
           </ThemeProvider>
+          </BrandProvider>
         </NextIntlClientProvider>
       </body>
     </html>

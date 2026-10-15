@@ -3,15 +3,18 @@
 import { forwardRef, type ComponentProps } from "react";
 import { Link as LocaleLink } from "@/i18n/base-navigation";
 import { themedHref } from "@/lib/theme";
+import { brandedHref } from "@/lib/brands";
+import { useBrand } from "@/components/branding/BrandProvider";
 import { useTheme } from "./ThemeProvider";
 
 export const ThemeLink = forwardRef<HTMLAnchorElement, ComponentProps<typeof LocaleLink>>(
   function ThemeLink({ href, ...props }, ref) {
     const theme = useTheme();
+    const brand = useBrand();
     let destination = href;
     if (typeof href === "string") {
-      destination = themedHref(href, theme);
-    } else if (theme !== "default" && !href.protocol && !href.host && href.pathname?.startsWith("/") && !href.pathname.startsWith("//")) {
+      destination = brandedHref(themedHref(href, theme), brand);
+    } else if ((theme !== "default" || brand) && !href.protocol && !href.host && href.pathname?.startsWith("/") && !href.pathname.startsWith("//")) {
       const query = new URLSearchParams(
         typeof href.query === "string" ? href.query : undefined,
       );
@@ -22,8 +25,10 @@ export const ThemeLink = forwardRef<HTMLAnchorElement, ComponentProps<typeof Loc
           }
         }
       }
-      if (!query.has("theme")) query.set("theme", theme);
-      destination = { ...href, query: query.toString() };
+      if (theme !== "default" && !query.has("theme")) query.set("theme", theme);
+      const hrefWithBrand = brandedHref(`${href.pathname}?${query}`, brand);
+      const updatedQuery = hrefWithBrand.split("?")[1] || "";
+      destination = { ...href, query: updatedQuery };
     }
     return <LocaleLink ref={ref} href={destination} {...props} />;
   },

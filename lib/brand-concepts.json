@@ -1,0 +1,610 @@
+{
+  "date": "2026-10-15",
+  "status": "Proposed identities and packaging concepts; not production artwork or validated consumer preferences.",
+  "shared": {
+    "product": {
+      "en": "Foot stimulation wrap",
+      "fr": "Support de stimulation du pied"
+    },
+    "productShort": {
+      "en": "An open wrap. A focused idea.",
+      "fr": "Un support ouvert. Une idée précise."
+    },
+    "productDescription": {
+      "en": "An open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot.",
+      "fr": "Un support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied."
+    },
+    "conceptNote": {
+      "en": "Brand and packaging concept. Final design, instructions and market requirements remain to be established.",
+      "fr": "Concept de marque et de packaging. Le design final, les instructions et les exigences de mise sur le marché restent à établir."
+    },
+    "method": {
+      "en": "Keep the same product and descriptor across all five identities. Compare the feeling created by the name, typography, colour, language and information hierarchy. These are creative hypotheses for discussion, not findings from consumer testing.",
+      "fr": "Conserver le même produit et le même descriptif dans les cinq identités. Comparer l’impression créée par le nom, la typographie, les couleurs, le langage et la hiérarchie de l’information. Il s’agit d’hypothèses créatives à discuter, pas de conclusions issues de tests consommateurs."
+    },
+    "productInvariant": "The same approved slim ivory/taupe open foot wrap with four round modules. Packaging photographs do not redefine the industrial design.",
+    "backPanelStructure": [
+      {
+        "en": "What it is",
+        "fr": "Le produit"
+      },
+      {
+        "en": "The idea behind it",
+        "fr": "L’idée à l’origine"
+      },
+      {
+        "en": "How to learn more",
+        "fr": "Pour en savoir plus"
+      }
+    ],
+    "notOnConceptPack": [
+      "Invented certifications or medical endorsements",
+      "Treatment, prevention, correction or pain-relief promises",
+      "Unconfirmed session duration, sizing, contents or electrical specifications",
+      "Made-up manufacturing origin or environmental certification",
+      "A functioning-looking barcode or QR code without a real destination"
+    ],
+    "materialsNote": {
+      "en": "Proposed material and construction choices, not confirmed sourcing or sustainability claims. Validate size, protection, accessibility and manufacturing cost with the physical product.",
+      "fr": "Pistes de matières et de construction, sans affirmation sur l’approvisionnement ni certification environnementale. Valider le volume, la protection, l’accessibilité et le coût de fabrication avec le produit physique."
+    },
+    "imageMethod": "Built-in image_gen; one independent packaging photograph per identity. Images show English concept copy; French adaptations are provided as live text. No generated product renders are substituted for the approved wrap."
+  },
+  "brands": [
+    {
+      "id": "dayable",
+      "name": "Dayable",
+      "image": "dayable-packaging.png",
+      "territory": {
+        "en": "Everyday capability",
+        "fr": "Le quotidien, avec attention"
+      },
+      "positioning": {
+        "en": "Care that belongs in an ordinary, full life. The brand speaks to the person and their plans before it speaks about equipment.",
+        "fr": "Un soin qui trouve sa place dans une vie bien remplie. La marque s’adresse à la personne et à ses projets avant de parler de l’appareil."
+      },
+      "audience": {
+        "en": "Broadest everyday invitation: people on their feet for work, walkers and practical self-care buyers. Warmth should feel adult and useful, with no implication that disability reflects a lack of capability.",
+        "fr": "L’invitation la plus quotidienne : personnes debout au travail, amateurs de marche et adeptes d’un soin concret. La chaleur doit rester adulte et utile, sans associer le handicap à un manque de capacité."
+      },
+      "palette": {
+        "background": "#F7F2E9",
+        "ink": "#443846",
+        "accent": "#BD7855",
+        "soft": "#E0AE91",
+        "line": "#DDD2C6"
+      },
+      "type": {
+        "wordmark": "Inter, sturdy mixed-case sans; retain the visible middle a",
+        "heading": "Inter, generous medium-weight type",
+        "body": "Inter",
+        "style": "Warm, open, useful"
+      },
+      "graphic": {
+        "en": "A broad arch and a spacious vertical colour band. The arch suggests room in a day, without becoming a literal foot or a sunrise cliché.",
+        "fr": "Une arche ample et une bande de couleur verticale. L’arche évoque une place à trouver dans la journée, sans dessiner un pied ni un soleil littéral."
+      },
+      "voice": [
+        {
+          "en": "Start with ordinary life and real situations.",
+          "fr": "Partir de la vie quotidienne et de situations concrètes."
+        },
+        {
+          "en": "Use short, capable sentences. Avoid motivational coaching.",
+          "fr": "Des phrases courtes et assurées. Éviter le ton de coach."
+        },
+        {
+          "en": "Invite attention; do not promise a better version of the person.",
+          "fr": "Inviter à l’attention, sans promettre une meilleure version de la personne."
+        }
+      ],
+      "hero": {
+        "eyebrow": {
+          "en": "A PLACE FOR FOOT CARE",
+          "fr": "UNE PLACE POUR VOS PIEDS"
+        },
+        "headline": {
+          "en": "A little care.\nRoom for your day.",
+          "fr": "Un peu d’attention.\nUne place dans votre journée."
+        },
+        "body": {
+          "en": "Your feet are part of every plan. Dayable explores a simple, seated moment of foot care with an open stimulation wrap in development.",
+          "fr": "Vos pieds font partie de tous vos projets. Dayable explore un moment de soin simple, en position assise, avec un support de stimulation ouvert en développement."
+        },
+        "cta": {
+          "en": "Meet the wrap",
+          "fr": "Découvrir le support"
+        }
+      },
+      "headlines": [
+        {
+          "en": "Make room for your feet.",
+          "fr": "Faites une place à vos pieds."
+        },
+        {
+          "en": "For the day you have in mind.",
+          "fr": "Pour la journée que vous avez en tête."
+        },
+        {
+          "en": "Good care starts with attention.",
+          "fr": "Prendre soin commence par l’attention."
+        }
+      ],
+      "packaging": {
+        "format": {
+          "en": "A shallow book-style box with a broad apricot side panel and an easy-to-grip paper pull tab.",
+          "fr": "Une boîte plate, à ouverture livre, avec une large tranche abricot et une languette en papier facile à saisir."
+        },
+        "materials": {
+          "en": "Warm ivory textured paper over board; aubergine ink; blind-embossed arch; proposed moulded-pulp insert.",
+          "fr": "Papier ivoire texturé sur carton ; encre aubergine ; arche en gaufrage à sec ; calage en pâte moulée envisagé."
+        },
+        "hierarchy": [
+          "Dayable",
+          "Foot stimulation wrap",
+          "A little care. Room for your day."
+        ],
+        "front": {
+          "en": "Dayable\nFoot stimulation wrap\nA little care. Room for your day.",
+          "fr": "Dayable\nSupport de stimulation du pied\nUn peu d’attention. Une place dans votre journée."
+        },
+        "back": {
+          "en": "Make room for your feet.\nAn open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot. Conceived for a seated moment at home.\nDiscover the idea, the design and the questions still being explored.",
+          "fr": "Faites une place à vos pieds.\nUn support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied. Pensé pour un moment assis à la maison.\nDécouvrez l’idée, le design et les questions encore à l’étude."
+        },
+        "insert": {
+          "en": "Make room for your feet.",
+          "fr": "Faites une place à vos pieds."
+        }
+      },
+      "watchout": {
+        "en": "Do not let the friendly type become childish, or let ‘able’ become a promise of restored function. Reinforce Dayable spelling.",
+        "fr": "Éviter une typographie enfantine et toute lecture de « able » comme une promesse de restauration fonctionnelle. Bien installer l’orthographe Dayable."
+      }
+    },
+    {
+      "id": "soluen",
+      "name": "Soluen",
+      "image": "soluen-packaging.png",
+      "territory": {
+        "en": "Composed personal care",
+        "fr": "Un soin calme et précis"
+      },
+      "positioning": {
+        "en": "The attentive practitioner translated into a home object: composed, clear and personal. Seriousness comes from the quality of the explanation.",
+        "fr": "L’attention du praticien transposée dans un objet pour la maison : calme, clair et personnel. Le sérieux vient de la qualité des explications."
+      },
+      "audience": {
+        "en": "A bridge for buyers who want reassurance about a device but do not want to identify as a patient. It can welcome beauty-conscious and practical buyers without leading on either.",
+        "fr": "Un pont pour ceux qui veulent être rassurés sur un appareil sans se définir comme patients. Il peut accueillir les motivations esthétiques comme pratiques, sans se limiter à l’une d’elles."
+      },
+      "palette": {
+        "background": "#F4F5EF",
+        "ink": "#173F40",
+        "accent": "#315F60",
+        "soft": "#D8E7E3",
+        "line": "#CAD8D2"
+      },
+      "type": {
+        "wordmark": "Fraunces, composed low-contrast serif, mixed case",
+        "heading": "Fraunces, restrained regular weight",
+        "body": "Inter",
+        "style": "Composed, attentive, clear"
+      },
+      "graphic": {
+        "en": "A soft mineral field with one precise fine rule. No medical cross or pseudo-scientific symbol; the useful information does the reassuring.",
+        "fr": "Un aplat minéral et un filet précis. Ni croix médicale ni symbole pseudo-scientifique ; c’est la qualité de l’information qui rassure."
+      },
+      "voice": [
+        {
+          "en": "Explain the idea before inviting belief.",
+          "fr": "Expliquer l’idée avant de demander la confiance."
+        },
+        {
+          "en": "Be calm and specific, with space for questions.",
+          "fr": "Rester calme et précis, en laissant une place aux questions."
+        },
+        {
+          "en": "Separate intention from what has been demonstrated.",
+          "fr": "Distinguer l’intention de ce qui a été démontré."
+        }
+      ],
+      "hero": {
+        "eyebrow": {
+          "en": "CONSIDERED FOOT CARE",
+          "fr": "LE SOIN DU PIED, AVEC ATTENTION"
+        },
+        "headline": {
+          "en": "A clearer approach\nto foot care.",
+          "fr": "Une approche claire\ndu soin des pieds."
+        },
+        "body": {
+          "en": "An open wrap. A focused muscle approach. Soluen is exploring stimulation in a considered design for use at home, with the details clearly explained.",
+          "fr": "Un support ouvert. Une approche musculaire ciblée. Soluen explore la stimulation dans un design pensé pour la maison, dont chaque intention est clairement expliquée."
+        },
+        "cta": {
+          "en": "Understand the concept",
+          "fr": "Comprendre le concept"
+        }
+      },
+      "headlines": [
+        {
+          "en": "Care, with attention.",
+          "fr": "Le soin, avec attention."
+        },
+        {
+          "en": "A clear idea. Thoughtfully developed.",
+          "fr": "Une idée claire. Un développement réfléchi."
+        },
+        {
+          "en": "Space for your questions.",
+          "fr": "Une place pour vos questions."
+        }
+      ],
+      "packaging": {
+        "format": {
+          "en": "A pale mineral sleeve over a deep-teal drawer box. A large thumb cutout offers an obvious opening gesture.",
+          "fr": "Un fourreau minéral clair sur une boîte tiroir vert profond. Une large encoche rend le geste d’ouverture évident."
+        },
+        "materials": {
+          "en": "Smooth matte ivory paper; deep teal ink; subtle debossed wordmark; proposed fitted paperboard tray. No foil or pharmacy styling.",
+          "fr": "Papier ivoire mat et lisse ; encre vert profond ; mot-symbole en léger creux ; plateau en carton ajusté envisagé. Sans dorure ni codes de pharmacie."
+        },
+        "hierarchy": [
+          "Soluen",
+          "Foot stimulation wrap",
+          "Care, with attention."
+        ],
+        "front": {
+          "en": "Soluen\nFoot stimulation wrap\nCare, with attention.",
+          "fr": "Soluen\nSupport de stimulation du pied\nLe soin, avec attention."
+        },
+        "back": {
+          "en": "A clear idea. Thoughtfully developed.\nAn open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot.\nExplore the design, the rationale and what remains to be established.",
+          "fr": "Une idée claire. Un développement réfléchi.\nUn support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied.\nExplorez le design, la démarche et ce qu’il reste à établir."
+        },
+        "insert": {
+          "en": "A clear idea. Thoughtfully developed.",
+          "fr": "Une idée claire. Un développement réfléchi."
+        }
+      },
+      "watchout": {
+        "en": "Avoid skin-serum or pharmaceutical imitation. Decide and test pronunciation; do not invent an etymology or a ‘solution’ claim.",
+        "fr": "Éviter l’imitation d’un sérum ou d’un médicament. Choisir et tester la prononciation ; ne pas inventer d’étymologie ni de promesse de « solution »."
+      }
+    },
+    {
+      "id": "deartempo",
+      "name": "DearTempo",
+      "image": "deartempo-packaging.png",
+      "territory": {
+        "en": "A personal rhythm of care",
+        "fr": "Un rythme de soin personnel"
+      },
+      "positioning": {
+        "en": "A personal invitation to make time for foot care. The editorial warmth belongs to everyday ritual, not to romance or luxury beauty.",
+        "fr": "Une invitation personnelle à prendre du temps pour ses pieds. La chaleur éditoriale appartient au rituel quotidien, pas à la romance ni au luxe cosmétique."
+      },
+      "audience": {
+        "en": "Strongest invitation for ritual-led self-care buyers. Keep actual device detail visible so practical or male buyers still see themselves in it.",
+        "fr": "L’invitation la plus forte pour les adeptes d’un rituel de soin. Garder les détails de l’appareil visibles afin que les profils pratiques et les hommes puissent aussi s’y reconnaître."
+      },
+      "palette": {
+        "background": "#F6EFE5",
+        "ink": "#542B36",
+        "accent": "#925443",
+        "soft": "#E8C9B5",
+        "line": "#DDCABE"
+      },
+      "type": {
+        "wordmark": "Fraunces italic or gently sloped serif; DearTempo remains one word",
+        "heading": "Fraunces regular with selective italic emphasis",
+        "body": "Inter",
+        "style": "Personal, unhurried, grounded"
+      },
+      "graphic": {
+        "en": "Two quiet parallel arcs suggest rhythm and repetition. No music notes, hearts or cursive handwriting. A typographic invitation inside the lid creates the personal moment.",
+        "fr": "Deux arcs parallèles discrets évoquent le rythme et la répétition. Sans notes de musique, cœurs ni écriture manuscrite. Une invitation typographique à l’intérieur du couvercle crée le moment personnel."
+      },
+      "voice": [
+        {
+          "en": "Speak personally, without pet names or intimacy.",
+          "fr": "S’adresser personnellement, sans surnoms ni intimité forcée."
+        },
+        {
+          "en": "Let rhythm describe life, not the electrical waveform.",
+          "fr": "Le rythme décrit la vie, pas la forme du signal électrique."
+        },
+        {
+          "en": "Pair a warm opening with plain product information.",
+          "fr": "Associer une entrée chaleureuse à une information produit simple."
+        }
+      ],
+      "hero": {
+        "eyebrow": {
+          "en": "A MOMENT FOR YOUR FEET",
+          "fr": "UN MOMENT POUR VOS PIEDS"
+        },
+        "headline": {
+          "en": "Make time for\nwhat carries you.",
+          "fr": "Prenez le temps\nde penser à vos pieds."
+        },
+        "body": {
+          "en": "A quieter moment in a full day. DearTempo brings an open stimulation-wrap concept into the rhythm of life at home.",
+          "fr": "Un moment plus calme dans une journée remplie. DearTempo inscrit un concept de support de stimulation ouvert dans le rythme de la vie à la maison."
+        },
+        "cta": {
+          "en": "Discover the idea",
+          "fr": "Découvrir l’idée"
+        }
+      },
+      "headlines": [
+        {
+          "en": "A moment, thoughtfully yours.",
+          "fr": "Un moment qui vous ressemble."
+        },
+        {
+          "en": "A little attention, at your pace.",
+          "fr": "Un peu d’attention, à votre rythme."
+        },
+        {
+          "en": "A place for care in the day.",
+          "fr": "Une place pour le soin dans la journée."
+        }
+      ],
+      "packaging": {
+        "format": {
+          "en": "An oat-coloured book-opening box with an oxblood spine and a terracotta inner panel. A simple flat welcome card replaces gift-like ribbons.",
+          "fr": "Une boîte couleur avoine à ouverture livre, au dos bordeaux et à l’intérieur terre cuite. Une carte d’accueil simple remplace les rubans de cadeau."
+        },
+        "materials": {
+          "en": "Tactile laid paper; deep burgundy ink; a small blind-embossed rhythm motif; proposed simple paperboard cradle.",
+          "fr": "Papier vergé tactile ; encre bordeaux profond ; motif de rythme en gaufrage discret ; berceau simple en carton envisagé."
+        },
+        "hierarchy": [
+          "DearTempo",
+          "Foot stimulation wrap",
+          "Make time for what carries you."
+        ],
+        "front": {
+          "en": "DearTempo\nFoot stimulation wrap\nMake time for what carries you.",
+          "fr": "DearTempo\nSupport de stimulation du pied\nPrenez le temps de penser à vos pieds."
+        },
+        "back": {
+          "en": "A little attention, at your pace.\nAn open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot. Conceived for a seated moment at home.\nTake a moment to discover the design and the thinking behind it.",
+          "fr": "Un peu d’attention, à votre rythme.\nUn support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied. Pensé pour un moment assis à la maison.\nPrenez un instant pour découvrir le design et la démarche qui l’accompagne."
+        },
+        "insert": {
+          "en": "A moment, thoughtfully yours.",
+          "fr": "Un moment qui vous ressemble."
+        }
+      },
+      "watchout": {
+        "en": "The warmest direction can drift toward beauty or gifting. Keep the descriptor prominent, typography substantial and photography inclusive. Reinforce Dear, not deer.",
+        "fr": "La direction la plus chaleureuse peut glisser vers la beauté ou le cadeau. Garder un descriptif visible, une typographie consistante et des images inclusives. Bien installer Dear, sans confusion avec deer."
+      }
+    },
+    {
+      "id": "good-measure",
+      "name": "Good Measure",
+      "image": "good-measure-packaging.png",
+      "territory": {
+        "en": "Care with good judgement",
+        "fr": "Le soin, à sa juste mesure"
+      },
+      "positioning": {
+        "en": "A practical, grown-up brand that earns trust through proportion, legibility and candour. It suggests thoughtful choices, not measurement hardware.",
+        "fr": "Une marque pratique et adulte qui gagne la confiance par la mesure, la lisibilité et la franchise. Elle évoque des choix réfléchis, pas un appareil de mesure."
+      },
+      "audience": {
+        "en": "Useful for sceptical wellness shoppers, practical households and people comparing device details. Gender-neutral and friendly without becoming a gadget brand.",
+        "fr": "Pertinente pour les acheteurs sceptiques face au bien-être, les foyers pragmatiques et ceux qui comparent les détails des appareils. Inclusive et accueillante, sans devenir une marque de gadget."
+      },
+      "palette": {
+        "background": "#F7F4EC",
+        "ink": "#213D66",
+        "accent": "#315EA0",
+        "soft": "#DFD8C5",
+        "line": "#D3D8DC"
+      },
+      "type": {
+        "wordmark": "Inter bold, stacked Good / Measure in two deliberate lines",
+        "heading": "Inter semibold, clear editorial proportions",
+        "body": "Inter",
+        "style": "Plainspoken, practical, thoughtful"
+      },
+      "graphic": {
+        "en": "One long horizontal rule and strong type hierarchy. Avoid rulers, graduation marks, graphs and numeric claims that would imply the device measures anything.",
+        "fr": "Un long filet horizontal et une hiérarchie typographique nette. Éviter règles graduées, graphiques et chiffres qui suggéreraient une fonction de mesure."
+      },
+      "voice": [
+        {
+          "en": "Say what the product is before saying why it matters.",
+          "fr": "Dire ce qu’est le produit avant d’expliquer son intérêt."
+        },
+        {
+          "en": "Keep warmth in the honesty, not in exaggerated adjectives.",
+          "fr": "Mettre la chaleur dans la franchise, pas dans les adjectifs."
+        },
+        {
+          "en": "Treat questions as sensible, not objections to overcome.",
+          "fr": "Traiter les questions comme légitimes, pas comme des objections à lever."
+        }
+      ],
+      "hero": {
+        "eyebrow": {
+          "en": "THOUGHTFUL BY DESIGN",
+          "fr": "PENSÉ DANS LE DÉTAIL"
+        },
+        "headline": {
+          "en": "Care.\nIn good measure.",
+          "fr": "Le soin.\nÀ sa juste mesure."
+        },
+        "body": {
+          "en": "An open foot-stimulation wrap concept, explained without the big promises. A considered place for foot care in everyday life.",
+          "fr": "Un concept de support de stimulation du pied ouvert, expliqué sans grandes promesses. Une place réfléchie pour le soin des pieds au quotidien."
+        },
+        "cta": {
+          "en": "See what it is",
+          "fr": "Découvrir le produit"
+        }
+      },
+      "headlines": [
+        {
+          "en": "A considered addition to your day.",
+          "fr": "Une attention qui trouve sa place."
+        },
+        {
+          "en": "Good questions welcome.",
+          "fr": "Vos questions sont les bienvenues."
+        },
+        {
+          "en": "The details deserve a clear answer.",
+          "fr": "Les détails méritent une réponse claire."
+        }
+      ],
+      "packaging": {
+        "format": {
+          "en": "A straightforward chalk-coloured lid-and-base box with a large blue type block and a visible pull tab. Information is organised as an easy-to-read label.",
+          "fr": "Une boîte claire à couvercle et fond, avec un grand bloc typographique bleu et une languette visible. L’information s’organise comme une étiquette facile à lire."
+        },
+        "materials": {
+          "en": "Sturdy uncoated chalk paper; deep cobalt ink; sand-coloured interior; proposed folded paperboard insert. Confidence comes from print clarity rather than luxury finish.",
+          "fr": "Papier blanc craie non couché et consistant ; encre bleu cobalt profond ; intérieur sable ; calage en carton plié envisagé. La confiance vient de la clarté d’impression plutôt que d’une finition luxueuse."
+        },
+        "hierarchy": [
+          "Good Measure",
+          "Foot stimulation wrap",
+          "Care. In good measure."
+        ],
+        "front": {
+          "en": "Good Measure\nFoot stimulation wrap\nCare. In good measure.",
+          "fr": "Good Measure\nSupport de stimulation du pied\nLe soin. À sa juste mesure."
+        },
+        "back": {
+          "en": "What it is.\nAn open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot.\nWhat comes next.\nProduct-specific testing will establish instructions, suitability and performance. The idea and the unanswered questions are explained together.",
+          "fr": "Le produit.\nUn support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied.\nLa suite.\nLes essais spécifiques au produit établiront les instructions, la compatibilité et les performances. L’idée et les questions ouvertes sont expliquées ensemble."
+        },
+        "insert": {
+          "en": "Good questions welcome.",
+          "fr": "Vos questions sont les bienvenues."
+        }
+      },
+      "watchout": {
+        "en": "The phrase is familiar and crowded. Do not imply measurement capability. In French, retain the English name and use the French supporting line to communicate the intended meaning.",
+        "fr": "L’expression est courante et très utilisée. Ne pas suggérer une capacité de mesure. En français, garder le nom anglais et utiliser la signature française pour transmettre le sens voulu."
+      }
+    },
+    {
+      "id": "ordelan",
+      "name": "Ordelan",
+      "image": "ordelan-packaging.png",
+      "territory": {
+        "en": "Quiet instrument-maker precision",
+        "fr": "La précision discrète du fabricant"
+      },
+      "positioning": {
+        "en": "A maker with a clear process and a disciplined eye. The identity feels exact and composed while plain language and warm material keep it approachable.",
+        "fr": "Un fabricant à la démarche claire et au regard rigoureux. L’identité paraît précise et posée, tandis que le langage simple et les matières chaleureuses la rendent accessible."
+      },
+      "audience": {
+        "en": "The strongest equipment-first contrast for people seeking seriousness and product detail. Test whether this adds reassurance or makes ordinary self-care feel unnecessarily clinical.",
+        "fr": "Le contraste le plus orienté appareil pour les personnes qui cherchent du sérieux et des détails produit. Tester si cela rassure ou rend un soin quotidien inutilement clinique."
+      },
+      "palette": {
+        "background": "#F3F4EE",
+        "ink": "#253237",
+        "accent": "#55746D",
+        "soft": "#D8E1D3",
+        "line": "#C8D0C9"
+      },
+      "type": {
+        "wordmark": "Inter, widely tracked uppercase ORDELAN",
+        "heading": "Inter, restrained regular weight",
+        "body": "Inter",
+        "style": "Exact, composed, quietly human"
+      },
+      "graphic": {
+        "en": "Aligned fields, thin structural rules and a restrained four-point motif referencing the existing electrode concept. No invented serial numbers, performance plots or official seals.",
+        "fr": "Des champs alignés, des filets de construction et un motif discret à quatre points lié au concept d’électrodes existant. Sans numéros de série inventés, courbes de performance ni sceaux officiels."
+      },
+      "voice": [
+        {
+          "en": "Be exact about the design and modest about the outcome.",
+          "fr": "Être précis sur le design et mesuré sur le résultat."
+        },
+        {
+          "en": "Use human words before engineering vocabulary.",
+          "fr": "Utiliser des mots accessibles avant le vocabulaire technique."
+        },
+        {
+          "en": "Let structure communicate competence; never borrow surgical authority.",
+          "fr": "Laisser la structure exprimer la compétence, sans emprunter une autorité chirurgicale."
+        }
+      ],
+      "hero": {
+        "eyebrow": {
+          "en": "PURPOSE IN EVERY DETAIL",
+          "fr": "UNE INTENTION DANS CHAQUE DÉTAIL"
+        },
+        "headline": {
+          "en": "A considered approach.\nDown to the detail.",
+          "fr": "Une approche réfléchie.\nJusque dans les détails."
+        },
+        "body": {
+          "en": "An open textile design. Four electrode positions. Ordelan explores targeted foot-muscle stimulation with a clear intention and a transparent development process.",
+          "fr": "Un design textile ouvert. Quatre positions d’électrodes. Ordelan explore la stimulation ciblée d’un muscle du pied, avec une intention claire et une démarche de développement transparente."
+        },
+        "cta": {
+          "en": "Explore the design",
+          "fr": "Explorer le design"
+        }
+      },
+      "headlines": [
+        {
+          "en": "Considered, in every detail.",
+          "fr": "Chaque détail a son intention."
+        },
+        {
+          "en": "A focused design. Clearly explained.",
+          "fr": "Un design précis. Clairement expliqué."
+        },
+        {
+          "en": "A place for precision at home.",
+          "fr": "Une place pour la précision à la maison."
+        }
+      ],
+      "packaging": {
+        "format": {
+          "en": "A porcelain-grey sleeve with a celadon drawer and a large accessible finger recess. A clearly aligned information panel makes the box feel like considered equipment.",
+          "fr": "Un fourreau gris porcelaine avec tiroir céladon et une large encoche accessible. Un panneau d’information bien aligné donne à la boîte le sérieux d’un objet conçu avec soin."
+        },
+        "materials": {
+          "en": "Fine matte paper over board; midnight charcoal ink; subtle debossed four-point motif; proposed fitted paperboard cradle. Avoid black foam or sterile medical trays.",
+          "fr": "Papier fin mat sur carton ; encre anthracite ; motif à quatre points en creux discret ; berceau en carton ajusté envisagé. Éviter mousse noire et plateaux médicaux stériles."
+        },
+        "hierarchy": [
+          "ORDELAN",
+          "Foot stimulation wrap",
+          "Considered, in every detail."
+        ],
+        "front": {
+          "en": "ORDELAN\nFoot stimulation wrap\nConsidered, in every detail.",
+          "fr": "ORDELAN\nSupport de stimulation du pied\nChaque détail a son intention."
+        },
+        "back": {
+          "en": "An open design. A precise intention.\nAn open textile wrap in development, exploring electrical activation of a muscle along the inner edge of the foot. Four electrode positions form part of the current design concept.\nExplore the design rationale and the testing still to come.",
+          "fr": "Un design ouvert. Une intention précise.\nUn support textile ouvert en développement, qui explore l’activation électrique d’un muscle du bord interne du pied. Quatre positions d’électrodes font partie du concept de design actuel.\nExplorez la démarche de conception et les essais à venir."
+        },
+        "insert": {
+          "en": "A focused design. Clearly explained.",
+          "fr": "Un design précis. Clairement expliqué."
+        }
+      },
+      "watchout": {
+        "en": "The cool, institutional edge may distance people seeking ordinary self-care. Keep warm photography and plain language. Do not imply surgical validation or an established medical institution.",
+        "fr": "Le côté froid et institutionnel peut éloigner les personnes qui cherchent un soin ordinaire. Garder des images chaleureuses et un langage simple. Ne pas suggérer une validation chirurgicale ni une institution médicale établie."
+      }
+    }
+  ]
+}

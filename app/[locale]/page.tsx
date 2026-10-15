@@ -1,7 +1,9 @@
+import { getBrand, getBrandCopy } from "@/lib/brand-server";
+import { BrandHero } from "@/components/branding/BrandHero";
 import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 import { Icon } from "@/components/storefront/Icon";
 import { Science } from "@/components/storefront/Science";
 import {
@@ -17,10 +19,11 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = copy[localeOf(locale)];
+  const t = await getBrandCopy(localeOf(locale));
+  const brand = await getBrand();
   return (
     <>
-      <section className="hero hero-wide">
+      {brand ? <BrandHero brand={brand} locale={localeOf(locale)} /> : <section className="hero hero-wide">
         <div className="hero-background">
           <Image
             src="/images/hero-woman-panorama.webp"
@@ -54,8 +57,8 @@ export default async function HomePage({
             </div>
           </div>
         </div>
-      </section>
-      <div className="trust-strip">
+      </section>}
+      {!brand && <div className="trust-strip">
         <div className="container">
           {t.trust.map((text, i) => (
             <div key={text}>
@@ -64,7 +67,7 @@ export default async function HomePage({
             </div>
           ))}
         </div>
-      </div>
+      </div>}
       <Science />
       <Reviews />
       <Routine />

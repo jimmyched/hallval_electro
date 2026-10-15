@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { localeOf } from "@/lib/content";
+import { getBrand } from "@/lib/brand-server";
+import { brandData } from "@/lib/brands";
 import { education, sources } from "@/lib/research";
 import { Science } from "@/components/storefront/Science";
 import { Preorder } from "@/components/storefront/Preorder";
 import { SourceLink } from "@/components/storefront/SourceLink";
 type Props = {params: Promise<{locale: string}>};
 export async function generateMetadata({params}: Props): Promise<Metadata> {
-  const {locale} = await params; const t = education[localeOf(locale)];
+  const {locale} = await params; const lang = localeOf(locale);
+  const t = brandData(education[lang], await getBrand(), lang);
   return {title: t.eyebrow, description: t.intro};
 }
 export default async function SciencePage({params}: Props) {
   const {locale} = await params; setRequestLocale(locale);
-  const lang = localeOf(locale); const t = education[lang]; const fr = lang === "fr";
+  const lang = localeOf(locale); const brand = await getBrand();
+  const t = brandData(education[lang], brand, lang); const fr = lang === "fr";
   return <>
     <section className="knowledge-hero"><div className="container">
       <p className="eyebrow">{t.eyebrow}</p><h1>{t.title}<br/><em>{t.accent}</em></h1><p className="knowledge-lead">{t.intro}</p>

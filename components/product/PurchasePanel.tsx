@@ -1,10 +1,12 @@
 "use client";
+import { useBrand, useBrandCopy } from "@/components/branding/BrandProvider";
+import { brandCatalog, productDescriptor, productName } from "@/lib/brands";
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import type { Product } from "@/lib/shopify/types";
 import { formatMoney } from "@/lib/money";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/Button";
 import { useCart } from "@/components/cart/CartProvider";
@@ -16,7 +18,8 @@ export function PurchasePanel({ product, headingLevel = "h1", showReviews = fals
   const Title = headingLevel;
   const t = useTranslations("product.purchase");
   const locale = useLocale();
-  const content = copy[localeOf(locale)];
+  const content = useBrandCopy();
+  const brand = useBrand();
   const { addItem } = useCart();
 
   const firstAvailable = product.variants.find((v) => v.availableForSale);
@@ -44,10 +47,10 @@ export function PurchasePanel({ product, headingLevel = "h1", showReviews = fals
       <p className="text-xs font-medium tracking-widest text-primary uppercase">
         {t("eyebrow")}
       </p>
-      <Title className="product-title" aria-label="albea Pulse">
-        <span className="wordmark product-wordmark">albea<span aria-hidden="true">™</span></span>{" "}Pulse
+      <Title className="product-title" aria-label={productName(brand,localeOf(locale))}>
+        {brand ? <><span className="brand-wordmark brand-product-name">{brandCatalog[brand].name}</span><span className="brand-product-descriptor">{productDescriptor(localeOf(locale))}</span></> : <><span className="wordmark product-wordmark">albea<span aria-hidden="true">™</span></span>{" "}Pulse</>}
       </Title>
-      {showReviews && <a className="product-rating" href="#reviews">
+      {showReviews && !brand && <a className="product-rating" href="#reviews">
         <RatingStars rating={4.7} />
         <strong>{locale === "fr" ? "4,7/5" : "4.7/5"}</strong>
         <span>{locale === "fr" ? "3 avis" : "3 reviews"}</span>
@@ -59,6 +62,8 @@ export function PurchasePanel({ product, headingLevel = "h1", showReviews = fals
       <p className="mt-6 text-sm leading-relaxed text-slate-soft">
         {t("summary")}
       </p>
+
+      {brand && <p className="brand-demo-note">{locale === "fr" ? "Aperçu interactif · Prix indicatif. Aucun achat ni paiement." : "Interactive preview · Illustrative price. No purchase or payment."}</p>}
 
       {/* Size selector */}
       <fieldset className="mt-8">

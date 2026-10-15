@@ -1,20 +1,25 @@
 "use client";
+import { useBrand, useBrandCopy } from "@/components/branding/BrandProvider";
+import { brandCatalog } from "@/lib/brands";
 import { useState } from "react";
 import { useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { CartButton } from "@/components/cart/CartButton";
 import { Icon } from "@/components/storefront/Icon";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 export function Header() {
   const locale = localeOf(useLocale());
-  const t = copy[locale];
+  const t = useBrandCopy();
   const pathname = usePathname();
+  const brand = useBrand();
+  const name = brand ? brandCatalog[brand].name : "Albea";
   const [open, setOpen] = useState(false);
   const links = [
     "/product/albea",
     "/science",
     "/#faq",
   ];
+  if (pathname.startsWith("/brands")) return <header className="brand-lab-header"><Link href="/brands">{locale === "fr" ? "Étude de marques" : "Brand study"}</Link><div><a href="/research/naming.html">{locale === "fr" ? "Recherche de noms ↗" : "Naming research ↗"}</a><Link href={pathname} locale={locale === "fr" ? "en" : "fr"}>{locale === "fr" ? "EN" : "FR"}</Link></div></header>;
   return (
     <>
       {pathname === "/" && (
@@ -27,11 +32,11 @@ export function Header() {
         <div className="header-inner">
           <Link
             href="/"
-            className="wordmark"
-            aria-label={locale === "fr" ? "Albea, accueil" : "Albea, home"}
+            className={`wordmark ${brand ? "brand-wordmark" : ""}`}
+            aria-label={`${name}, ${locale === "fr" ? "accueil" : "home"}`}
             onClick={() => setOpen(false)}
           >
-            albea<span>®</span>
+            {brand ? name : <>albea<span>®</span></>}
           </Link>
           <nav
             className="desktop-nav"

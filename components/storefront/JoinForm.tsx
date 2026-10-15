@@ -1,11 +1,13 @@
 "use client";
+import { useBrandCopy } from "@/components/branding/BrandProvider";
+
 import { useState } from "react";
 import { useLocale } from "next-intl";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
 import { Icon } from "./Icon";
 export function JoinForm() {
   const locale = localeOf(useLocale());
-  const t = copy[locale];
+  const t = useBrandCopy();
   const [success, setSuccess] = useState(false);
   return (
     <section className="join-section section" id="join">

@@ -6,6 +6,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import type { CartLine } from "@/lib/shopify/types";
 import { formatMoney } from "@/lib/money";
+import { useBrand } from "@/components/branding/BrandProvider";
+import { useTheme } from "@/components/layout/ThemeProvider";
+import { brandedHref, productName } from "@/lib/brands";
+import { themedHref } from "@/lib/theme";
+import { localeOf } from "@/lib/content";
 import { cn } from "@/lib/cn";
 import { Button, Spinner } from "@/components/ui/Button";
 import { useCart } from "./CartProvider";
@@ -26,6 +31,7 @@ function CloseIcon() {
 function LineItem({ line }: { line: CartLine }) {
   const t = useTranslations("cart");
   const locale = useLocale();
+  const brand = useBrand();
   const { updateItem, removeItem, pendingLineId } = useCart();
   const isPending = pendingLineId === line.id;
 
@@ -40,7 +46,7 @@ function LineItem({ line }: { line: CartLine }) {
         {line.merchandise.product.image && (
           <Image
             src={line.merchandise.product.image.url}
-            alt={line.merchandise.product.image.altText ?? ""}
+            alt={brand ? productName(brand,localeOf(locale)) : line.merchandise.product.image.altText ?? ""}
             fill
             sizes="80px"
             className="object-cover"
@@ -51,7 +57,7 @@ function LineItem({ line }: { line: CartLine }) {
         <div className="flex items-start justify-between gap-2">
           <div>
             <p className="text-sm font-medium">
-              {line.merchandise.product.title}
+              {brand ? productName(brand,localeOf(locale)) : line.merchandise.product.title}
             </p>
             <p className="mt-0.5 text-xs text-slate-soft">
               {line.merchandise.title}
@@ -112,8 +118,10 @@ function LineItem({ line }: { line: CartLine }) {
 export function CartDrawer() {
   const t = useTranslations("cart");
   const locale = useLocale();
+  const brand = useBrand();
   const { cart, isOpen, closeCart, hasError, pendingLineId } = useCart();
   const router = useRouter();
+  const theme = useTheme();
   const panelRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -135,7 +143,7 @@ export function CartDrawer() {
   const handleCheckout = () => {
     if (!cart || pendingLineId) return;
     closeCart();
-    router.push("/checkout");
+    router.push(brandedHref(themedHref("/checkout",theme),brand));
   };
 
   return (

@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { copy, localeOf } from "@/lib/content";
+import { localeOf } from "@/lib/content";
+import { getBrandCopy } from "@/lib/brand-server";
 export default async function AboutPage({
   params,
 }: {
@@ -8,7 +9,7 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = copy[localeOf(locale)];
+  const t = await getBrandCopy(localeOf(locale));
   return (
     <section className="section editorial-page container">
       <p className="eyebrow">{t.preview}</p>
